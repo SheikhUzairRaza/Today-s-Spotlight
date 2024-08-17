@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today's Spotlight</title>
+    <link rel="shortcut icon" href="./images/favico.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Today's <span>Spotlight</span></h1>
+      <div class="app-container">
+        <h2 class="subtitle" style="position: relative">
+          Today
+          <div class="vector_images">
+            <img class="sun_background" src="./images/just_sun.svg" alt="" />
+            <img
+              class="sun_eyes"
+              src="./images/face_eyes.svg"
+              alt=""
+              style=""
+            />
+          </div>
+        </h2>
+        <div class="complete-progress">
+          <p class="progress-label">Raise the bar by completing your goals!</p>
+          <div class="progress-bar">
+            <div class="progress-value">
+              <span>2/3 completed</span>
+            </div>
+          </div>
+          <p class="error-label">Please set all the 3 goals!</p>
+        </div>
+        <div class="goal-container">
+          <div class="custom-checkbox">
+            <img
+              class="checkbox-icon"
+              src="./images/checkbox-icon.svg"
+              alt="image-checkbox"
+            />
+          </div>
+          <input
+            id="first"
+            type="text"
+            class="goal-input"
+            placeholder="Add your goal..."
+          />
+        </div>
+        <div class="goal-container">
+          <div class="custom-checkbox">
+            <img
+              class="checkbox-icon"
+              src="./images/checkbox-icon.svg"
+              alt="image-checkbox"
+            />
+          </div>
+          <input
+            id="second"
+            type="text"
+            class="goal-input"
+            placeholder="Add your goal..."
+          />
+        </div>
+        <div class="goal-container">
+          <div class="custom-checkbox">
+            <img
+              class="checkbox-icon"
+              src="./images/checkbox-icon.svg"
+              alt="image-checkbox"
+            />
+          </div>
+          <input
+            id="third"
+            type="text"
+            class="goal-input"
+            placeholder="Add your goal..."
+          />
+        </div>
+
+        <p class="quote">“Move one step ahead, today!”</p>
+
+        <p class="author-signature">Made with &hearts; by Sheikh Uzair Raza</p>
+      </div>
+    </main>
+  </body>
+</html>

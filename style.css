@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: #F2F8ED;
+    font-family: "Poppins", sans-serif;
+}
+.title{
+    color: #48A300;
+    font-size : 4rem;
+    text-align: center;
+}
+
+.title span{
+    color:#61481C;
+}
+.custom-checkbox{
+    background-color: #FFFFFF;
+    /* display:none; */
+}
+.custom-checkbox img{
+    display: none;
+}
+.completed .custom-checkbox img{
+    display:block;
+}
+main{
+    /* background-color: blue; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: ; */
+    height: 100vh;
+}
+main{
+    margin: 16px;
+    padding-bottom: 32px;
+    
+}
+.app-container{
+    max-width : 30rem;
+    min-height:40rem;
+    background-color: #FBFBFB;
+    margin-inline : auto;
+    border-radius: 15px;
+    padding: 32px 42px;
+    box-shadow: 0 0 7px 1px rgba(0,0,0,0.1);
+}
+
+.app-container h2>.sun-icon{
+    vertical-align: middle;
+    margin-left: 16px;
+    animation: circular-motion 5s linear infinite;
+}
+.vector_images{
+    margin-left: 4px;
+    position: relative; display: inline;
+    bottom: 8px;
+}
+.sun_eyes{
+    vertical-align: middle;
+          position : absolute;  
+          vertical-align: middle;
+          position : absolute;
+          top: 19px;
+          left: 15px;
+}
+.sun_background{
+    vertical-align: middle; position: absolute;
+    animation: circular-motion 4s linear infinite;
+}
+.progress-label{
+    font-size:14px;
+    color:#A3A3A3;
+    /* margin-top: 12px; */
+    margin-block:20px;
+}
+.progress-bar{
+    /* accent-color: #48A300; */
+    /* max-width: 563px; */
+    /* min height likhi tou nahi utha rha child percentage */
+    height: 30px;
+    border-radius: 80px;
+    background-color: #E9F2E2;
+    /* margin-top:18px; */
+    margin-block: 20px;
+    margin-bottom: 40px;
+/* margin-inline : left & right */
+/* margin-block : top  & bottom*/
+}
+.complete-progress{
+    position: relative;
+}
+
+
+.error-label{
+    color:#A3A3A3;
+    font-size:14px;
+    margin-block: 20px;
+    position: absolute;
+    bottom:-51px;
+    /* display: none; */
+}
+.not-completed .error-label{
+    display: none;
+}
+.progress-value{
+    width:0%;
+    height:100%;
+    border-radius: 80px;
+    background-color:#48A300;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+    /* justify-content: center; */
+}
+
+.progress-value span{
+    color:#EEFFE0;
+    font-size: 10px;
+    font-weight: 500;
+    padding-left: 20px;
+    min-width: max-content;
+}
+.first {
+    width:33.3%;
+    }
+    .second{
+    width:66.6%;
+    }
+    .third{
+    width:100%;
+    }
+.all-inputs completed .check-box{
+
+}
+.progress-bar p{
+    font-size: 14px;
+    padding-left: 20px;
+    color: #EEFFE0;
+}
+
+.all-container{
+    background-color: #FFFFFF; 
+}
+.goal-container{
+    border: 1px solid #EBEBEB;
+    height:82px;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    padding: 22px;
+    margin-bottom: 42px;
+    /* background-color: #FFFFFF; */
+}
+.custom-checkbox{
+    height:24px;
+    width:24px;
+    border-radius: 50%;
+    border: 2px solid #EBEBEB ;
+    flex-shrink: 0;
+    cursor: pointer;
+    /* align-self: stretch; */
+}
+.goal-input{
+    color:#EBEBEB;
+    /* margin-left: 20px; */
+    padding-left:20px; 
+    
+    font-size: 14px;
+    transition: font-size 0.3s ease;
+    border:none;
+    /* /* flex-grow: 1; * isse input bahir jarha shrink hony py*/ 
+    width :100% ; 
+    min-width:0;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    align-self : stretch;
+    /* white-space: nowrap;  */
+    
+    /*height:100% */
+    /* OR */
+    font-family: inherit;
+    font-weight:500;
+    
+    
+}
+.goal-input:focus{
+    outline:none;
+    /* when focus on input outline appears apply it to be none */
+    color:black;
+    font-size: 16px;
+    /* font family form ke case mein parent se inherit nahi horha hota karna parta hai */
+    
+}
+
+.goal-input::placeholder{
+    color:#D9D9D9;
+    /* text-align: center; */
+}
+.completed .goal-input{
+    color:#48A300;
+      text-decoration: line-through;
+}
+.quote{
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+color:#000000;
+margin-bottom:64px;
+}
+.suns{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.sun{
+    animation: circular-motion 5s linear infinite;
+}
+.face{
+    position: absolute;
+    left:3%;
+    top: 40%;
+
+}
+.author-signature{
+    text-align: center;
+    color: #8D8D8D;
+    font-size: 12px;
+}
+.completed .custom-checkbox{
+    background-color: #48A300 ;
+    border-color: #48A300; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* border-color fill krrha borders ka rang bhi */
+}
+@keyframes circular-motion {
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+  }
+@media (max-width:768px) {
+    .title{
+        font-size: 32px;
+    }
+    .app-container{
+        padding: 16px 30px;
+    }
+    .progress-label{
+        margin-block:15px;
+    }
+    .progress-bar{
+        height:24px;
+    }
+    .progress-value{
+        margin-block: 15px;
+        height: 100%;
+    }
+    
+        .custom-checkbox{
+            height:15px;
+            width:15px;
+            border-radius: 50%;
+            border: 2px solid #EBEBEB ;
+            flex-shrink: 0;
+            
+        }
+        .goal-container{
+            border: 1px solid #EBEBEB;
+            height:50px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 20px; 
+            /* background-color: #FFFFFF; */
+        }
+        .quote{
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            color:#000000;
+            margin-bottom:32px;
+            }    
+            .completed .custom-checkbox img{
+                width:10px;
+                height: 7px;
+            }
+}
+
